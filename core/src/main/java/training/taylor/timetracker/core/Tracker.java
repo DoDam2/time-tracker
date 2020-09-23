@@ -11,27 +11,27 @@ import java.util.List;
  */
 @Component
 public class Tracker {
-    /** list */
+    /** *list */
     @Autowired
     private List<TimeEntry> entries;
 
-    /** add */
-    public void add(TimeEntry entry) {
+    /** *add */
+    public void add(final TimeEntry entry) {
         entries.add(entry);
     }
 
-    /** remove */
-    public void remove(TimeEntry entry) {
+    /** *remove */
+    public void remove(final TimeEntry entry) {
         entries.remove(entry);
     }
 
-    /** size */
+    /** *size */
     public int size() {
         return entries.size();
     }
 
-    /** get */
-    public TimeEntry get(int index) {
+    /** *get */
+    public TimeEntry get(final int index) {
         boolean valid = false;
 
         return entries.get(index);
