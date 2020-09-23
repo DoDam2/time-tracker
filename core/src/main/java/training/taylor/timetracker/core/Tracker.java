@@ -6,23 +6,27 @@ import training.taylor.timetracker.core.dao.TimeEntry;
 
 import java.util.List;
 
-@Component
+@Component Tracker
 public class Tracker {
-    @Autowired
+    @Autowired list
     private List<TimeEntry> entries;
 
+    /** {@add}*/
     public void add(TimeEntry entry) {
         entries.add(entry);
     }
 
+    /** {@remove}*/
     public void remove(TimeEntry entry) {
         entries.remove(entry);
     }
 
+    /** {@size}*/
     public int size() {
         return entries.size();
     }
 
+    /** {@TimeEntry}*/
     public TimeEntry get(int index) {
         boolean valid = false;
 
