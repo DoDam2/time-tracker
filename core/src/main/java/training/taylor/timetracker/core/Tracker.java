@@ -15,22 +15,22 @@ public class Tracker {
     @Autowired
     private List<TimeEntry> entries;
 
-    /** *add */
+    /** Method_add */
     public void add(final TimeEntry entry) {
         entries.add(entry);
     }
 
-    /** *remove */
+    /** Method_remove */
     public void remove(final TimeEntry entry) {
         entries.remove(entry);
     }
 
-    /** *size */
+    /** Method_size */
     public int size() {
         return entries.size();
     }
 
-    /** *get */
+    /** Method_get */
     public TimeEntry get(final int index) {
         boolean valid = false;
 
